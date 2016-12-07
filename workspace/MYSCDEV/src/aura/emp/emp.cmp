@@ -1,0 +1,48 @@
+<aura:component controller="empDetails">
+    
+    <ltng:require styles="/resource/bootstrap"/>    
+	<aura:attribute name="Employees" type="TechSoft.Employee__c[]" />
+    <aura:attribute name="newEmployee" type="Employee__c"
+                                       default="{ 'sobjectType': 'Employee__c',
+                                       'TechSoft__Employee_Id__c': '',
+                                       'TechSoft__Employee_Name__c': ''
+                                       }"/> 
+    
+    <aura:handler name="init" value="{!this}" action="{!c.pageLoad}" />
+    
+    <div class="bootstrap-sf1">  
+        
+        <div class="container">
+           <form>
+               <fieldSet>
+                   <ui:inputText aura:id="empId" 
+                                 label="Employee Id" 
+                                 class="form-control" 
+                                 value="{!v.newEmployee.TechSoft__Employee_Id__c}" 
+                                 placeholder="Employee Id"
+                                 required="true" />
+                   
+                   <ui:inputText aura:id="empName" 
+                                 label="Employee Name" 
+                                 class="form-control" 
+                                 value="{!v.newEmployee.TechSoft__Employee_Name__c}" 
+                                 placeholder="Employee Name"
+                                 required="true" />
+                   
+                   <ui:button label="Save" 
+                              labelclass="label"
+                              press="{!c.createEmployee}"/>
+               </fieldSet>
+           </form>
+        </div> 
+         
+         <div class="container">
+             <div id="list" class="row">
+                 <aura:iteration items="{!v.Employees}" var="Employee">
+                        <p>{!Employee.TechSoft__Employee_Id__c},
+                           {!Employee.TechSoft__Employee_Name__c}</p>
+                 </aura:iteration>
+             </div>
+         </div>
+    </div>	
+</aura:component>

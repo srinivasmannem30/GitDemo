@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>entityNames</name>
+                <value>[&quot;Account&quot;,&quot;Contact&quot;,&quot;ContentDocument&quot;]</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>label</name>
+                <value>My Data</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>maxRecords</name>
+                <value>3</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:recentItems</componentName>
+        </componentInstances>
+        <name>main</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>My Data</masterLabel>
+    <pageTemplate>flexipage:defaultAppHomeTemplate</pageTemplate>
+    <type>AppPage</type>
+</FlexiPage>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>TaskList</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>TaskList</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assignee --></label>
+        <name>Assignee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created --></label>
+        <name>Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urgent</masterLabel>
+            <translation><!-- Urgent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reporter --></label>
+        <name>Reporter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution --></label>
+        <name>Resolution__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate</masterLabel>
+            <translation><!-- Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete</masterLabel>
+            <translation><!-- Incomplete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not an Issue</masterLabel>
+            <translation><!-- Not an Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unresolved</masterLabel>
+            <translation><!-- Unresolved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Created</masterLabel>
+            <translation><!-- Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InProgress</masterLabel>
+            <translation><!-- InProgress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready To test</masterLabel>
+            <translation><!-- Ready To test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reopened</masterLabel>
+            <translation><!-- Reopened --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summary --></label>
+        <name>Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated --></label>
+        <name>Updated__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

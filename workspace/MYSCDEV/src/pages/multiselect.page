@@ -1,0 +1,52 @@
+<apex:page controller="multiselect">
+    <apex:form >
+       <!-- <apex:outputLabel >Enter Name:</apex:outputLabel>
+        <apex:inputtext label="First Name" value="{!abc}" /> -->
+        <apex:outputPanel id="multiselectPanel" layout="block" styleClass="duelingListBox">
+        <table class="layout">
+          <tbody>
+            <tr>
+                <td class="selectCell">
+                <apex:selectList id="sel1" value="{!leftselected}" multiselect="true" style="width:150px" size="10">
+                    <apex:selectOptions value="{!unselectedvalues}" />
+                </apex:selectList>
+                </td>
+                <td class="buttonCell">
+                <apex:outputPanel layout="block" styleClass="text">Add</apex:outputPanel>
+                <apex:outputPanel layout="block" styleClass="text">
+                  <apex:image value="/s.gif" alt="Add" styleClass="rightArrowIcon" title="Add">
+                        <apex:actionSupport event="onclick" action="{!selectclick}" reRender="multiselectPanel"/>
+                    </apex:image> 
+                </apex:outputPanel>
+                <apex:outputPanel layout="block" styleClass="text">
+                    <apex:image value="/s.gif" alt="Remove" styleClass="leftArrowIcon" title="Remove">
+                        <apex:actionSupport event="onclick" action="{!unselectclick}" reRender="multiselectPanel"/>
+                    </apex:image>    
+                </apex:outputPanel>
+                <apex:outputPanel layout="block" styleClass="duelingText">Remove</apex:outputPanel>  
+                </td>                   
+                <td class="selectCell"> 
+                <apex:selectList id="sel2" value="{!rightselected}" multiselect="true" style="width:150px" size="10">
+                    <apex:selectOptions value="{!SelectedValues}" />                    
+                </apex:selectList>
+                </td>
+                <td class="buttonCell">
+                <apex:outputPanel layout="block" styleClass="text" >Up</apex:outputPanel>
+                <apex:outputPanel layout="block" styleClass="text">
+                    <apex:image value="/s.gif" alt="Up" styleClass="upArrowIcon" title="Up">
+                        <apex:actionSupport event="onclick" action="{!selectclick1}" reRender="multiselectPanel"/>
+                    </apex:image>
+                </apex:outputPanel>
+                <apex:outputPanel layout="block" styleClass="text">             
+                    <apex:image value="/s.gif" alt="Down" styleClass="downArrowIcon" title="Down">
+                         <apex:actionSupport event="onclick" action="{!selectclick2}" reRender="multiselectPanel"/>
+                    </apex:image>
+                </apex:outputPanel>
+                <apex:outputPanel layout="block" styleClass="text">Down</apex:outputPanel>
+              </td>               
+                </tr>       
+              </tbody>
+           </table>
+         </apex:outputPanel>
+  </apex:form>
+</apex:page>

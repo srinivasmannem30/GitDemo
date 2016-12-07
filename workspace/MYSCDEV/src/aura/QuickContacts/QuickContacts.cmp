@@ -1,0 +1,4 @@
+<aura:component >
+	 <c:SearchBar />
+    <c:contactList />
+</aura:component>

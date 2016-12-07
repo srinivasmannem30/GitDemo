@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatDeployment xmlns="http://soap.sforce.com/2006/04/metadata">
+    <displayQueuePosition>false</displayQueuePosition>
+    <enablePrechatApi>true</enablePrechatApi>
+    <enableTranscriptSave>true</enableTranscriptSave>
+    <label>EDI Deployment</label>
+    <windowTitle>Live Chating</windowTitle>
+</LiveChatDeployment>
