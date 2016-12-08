@@ -39,6 +39,7 @@
     <apex:form >
     	<apex:outputlabel>testing Git Commit</apex:outputlabel>
         <apex:outputlabel>testing Git Commit</apex:outputlabel>
+        <apex:outputlabel>testing Git Commit</apex:outputlabel>
         <apex:actionFunction name="saveMethod" action="{!save}" oncomplete="location.reload();">
             <apex:param assignTo="{!contactJson}" name="contactJson" value="x"/>
         </apex:actionFunction>
