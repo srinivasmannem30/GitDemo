@@ -1,0 +1,6 @@
+<apex:page StandardController="Contact"  extensions="ContactExt" >
+    <apex:form >
+        <apex:inputField label="Contact Date" value="{!cs.Contact_Date__c}" />
+        <apex:commandButton title="Save Date" value="Save" action="{!save}"/>
+    </apex:form>
+</apex:page>
